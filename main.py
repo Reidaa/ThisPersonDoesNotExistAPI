@@ -1,9 +1,10 @@
-from thispersondoesnotexist.online_getter import get_online_person
-from thispersondoesnotexist.helpers import save_picture
-
-from uuid import uuid4
 from pathlib import Path
+from uuid import uuid4
+
 from loguru import logger
+
+from thispersondoesnotexist.helpers import save_picture
+from thispersondoesnotexist.online_getter import get_online_person
 
 for i in range(100):
     # Generate a unique filename using uuid4

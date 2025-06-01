@@ -1,8 +1,9 @@
+from hashlib import algorithms_available
 from itertools import repeat
 from typing import Dict
-from online_getter import get_online_person
+
 from helpers import get_checksum_from_picture, save_picture
-from hashlib import algorithms_available
+from online_getter import get_online_person
 
 
 class Person:

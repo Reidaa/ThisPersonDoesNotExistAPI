@@ -1,4 +1,5 @@
 import requests
+
 from thispersondoesnotexist.helpers import save_picture
 
 
