@@ -1,7 +1,4 @@
 import hashlib
-from hashlib import algorithms_available
-
-__all__ = ("get_checksum_from_picture", "algorithms_available", "save_picture")
 
 
 def get_checksum_from_picture(picture: bytes, method: str = "md5") -> str:
@@ -16,7 +13,7 @@ def get_checksum_from_picture(picture: bytes, method: str = "md5") -> str:
     return h.hexdigest()
 
 
-def save_picture(picture: bytes, file: str = None) -> int:
+def save_picture(picture: bytes, file: str | None = None) -> int:
     """Save a picture to a file.
     The picture must be provided as it content as bytes.
     The filename must be provided as a str with the absolute or relative path where to store it.
